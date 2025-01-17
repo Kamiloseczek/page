@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamil - Moja Strona</title>
+    <style>
+        /* Stylowanie całej strony */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        /* Animacja nagłówka */
+        h1 {
+            color: #FF6347;
+            font-size: 3rem;
+            margin-top: 50px;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ddd;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Animacja dla umiejętności */
+        .skills {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .skill {
+            background-color: #444;
+            color: #fff;
+            margin: 10px;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+        }
+
+        /* Efekty tła */
+        header {
+            background: linear-gradient(135deg, #1e1e1e, #121212);
+            padding: 50px 0;
+            border-bottom: 2px solid #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            color: #bbb;
+            padding: 15px;
+            margin-top: 30px;
+            border-top: 2px solid #333;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Animacje przycisków */
+        .skill:hover {
+            transform: scale(1.1);
+            background-color: #FF6347;
+        }
+
+        /* Animacje fadeIn */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animacja dla sekcji umiejętności */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animacja dla nagłówka */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cześć, jestem Kamil!</h1>
+    <p>Programista Python | Pasjonat technologii</p>
+</header>
+
+<div class="content">
+    <p>Witam na mojej stronie! Mam doświadczenie w programowaniu w Pythonie oraz znajomość innych technologii webowych.</p>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+    </div>
+
+    <p>Stale rozwijam swoje umiejętności i uczę się nowych technologii!</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Kamil | Wykonanie przez Marka S</p>
+</footer>
+
+<script>
+    console.log("Strona załadowana! Witaj na mojej stronie.");
+</script>
+
+</body>
+</html>
